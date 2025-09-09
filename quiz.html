@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en"> <!--declares the language of the webpage-->
+    
+    <head>
+      <meta charset="utf-8">
+      <title>Quiz - University of Sheffield</title> <!--gives the browser a title-->
+      <meta name="author" content="Alice Lean">
+	  <link rel="stylesheet" href="quiz.css"> <!--links the html file to the corresponding css file-->
+    </head>
+    
+    <body>
+		<nav> <!--html element, to create a navigation menu-->
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox">
+					<div class="hamburger-lines">
+						<span class="line 1"></span> <!--creates the 3 lines-->
+						<span class="line 2"></span>
+						<span class="line 3"></span>
+					</div>  
+					<div id="menu">
+						<li><a href="index.html">Home</a></li> <!--links the webpage menu text to the corresponding html file-->
+						<li><a href="food-drink.html">Food and Drink Vendors</a></li>
+						<li><a href="picnic-location.html">Picnic Locations</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+					</div>
+				</div>
+			</div>
+		</nav> <!--Reference: Álvaro (no date) Simple Centred Hamburger Menu [https://codepen.io/alvarotrigo/pen/wvrzPWL] (Accessed: 12 November 2024)-->
+		
+		<header>University of Sheffield</header> <!--html element, the main title of the webpage-->
+		
+		<h1>Quiz</h1> <!--html element, heading of the webpage-->
+		
+		<section id ="section"> <!--html element to section a webpage-->
+			<p> Hover over the correct answer! </p>
+		</section>
+		
+		<section class="section1">
+			<h2>Which image shows the Diamond? </h2> <!--a second heading for subheading the section-->
+			
+			<div class="images">
+				<figure>
+					<img id="picL" src="arts.jpg" alt="Long greyish tower" width="250"> <!--src inputs the named jpg into the webpage. alt gives the image a text description. width controls the size of the image-->
+					<p class = "answer"> INCORRECT! </p> 
+						<figcaption>(Ali M.S. Kashkooli, 2010)</figcaption> <!--the caption appears below the image-->
+				</figure>
+				<figure>
+					<img class="picW" src="diamonds.jpg" alt="Square building with diamond shaped windows" width="400"> 
+					<p class = "c-answer"> CORRECT! </p> <!-- different class because correct answer (so different colour used when appearing)-->
+						<figcaption>(University Of Sheffield)</figcaption>
+				</figure>
+				<figure>
+					<img class="pic" src="wave.jpg" alt="Wavey building" width="400">
+					<p class = "answer"> INCORRECT! </p>
+						<figcaption>(Burro Happold)</figcaption>
+				</figure>
+			</div>
+		</section>
+		
+		<section class="section1">
+			<h2>Which image shows Crooks Valley Park? </h2>
+			
+			<div class="images">
+				<figure>
+					<img class="pic" src="wpark.jpg" alt="Park with bandstand" width="400">
+					<p class = "answer"> INCORRECT! </p>
+						<figcaption>(Ben Molyneuxhoto)</figcaption>
+				</figure>
+				<figure>
+					<img class="pic" src="botanicalG.jpeg" alt="Park with flowers" width="400"> 
+					<p class = "answer"> INCORRECT! </p>
+						<figcaption>(Mike Smith, 2014)</figcaption>
+				</figure>
+				<figure>
+					<img class="picW" src="cvp.jpeg" alt="Park with big lake" width="400">
+					<p class = "c-answer"> CORRECT! </p>
+						<figcaption>(Graham Hogg, 2016)</figcaption>
+				</figure>
+			</div>
+		</section>
+		
+		<article> <!--element to show independent content-->
+			<h3>References:</h3>
+			<p>Ali M.S. Kashkooli (2010) Arts Tower, the University of Sheffield, Sheffield, United Kingdom [<a href="https://www.researchgate.net/figure/Arts-Tower-the-University-of-Sheffield-Sheffield-United-Kingdom-Source-Authors_fig6_43529974">https://www.researchgate.net/figure/Arts-Tower-the-University-of-Sheffield-Sheffield-United-Kingdom-Source-Authors_fig6_43529974</a>] (Accessed: 9 November 2024)</p>
+			<p>University Of Sheffield (no date) Current Vacancies [<a href="https://www.sheffield.ac.uk/engineering/diamond-engineering/current-vacancies">https://www.sheffield.ac.uk/engineering/diamond-engineering/current-vacancies</a>] (Accessed: 9 November 2024)</p>
+			<p>Buro Happold (no date) The Wave – The University of Sheffield’s Faculty of Social Sciences [<a href="https://www.burohappold.com/projects/the-wave-the-university-of-sheffields-faculty-of-social-sciences/">https://www.burohappold.com/projects/the-wave-the-university-of-sheffields-faculty-of-social-sciences/</a>] (Accessed: 9 November 2024)</p>
+			<p>Ben Molyneuxhoto (no date) Weston Park, Sheffield in South Yorkshire in the UK. Weston Park, Sheffield in South Yorkshire in the United Kingdom [<a href="https://www.dreamstime.com/weston-park-sheffield-south-yorkshire-uk-weston-park-sheffield-south-yorkshire-united-kingdom-image244479694">https://www.dreamstime.com/weston-park-sheffield-south-yorkshire-uk-weston-park-sheffield-south-yorkshire-united-kingdom-image244479694</a>] (Accessed: 9 November 2024)</p>
+			<p>Mike Smith (2014) Sheffield Botanical Gardens [<a href="https://www.gardenvisit.com/gardens/sheffield_botanical_gardens">https://www.gardenvisit.com/gardens/sheffield_botanical_gardens</a>] (Accessed: 9 November 2024)</p>
+			<p>Graham Hogg's (2016) SK3387 : Crookes Valley Park [<a href="https://www.geograph.org.uk/photo/5044764">https://www.geograph.org.uk/photo/5044764</a>] (Accessed: 9 November 2024)</p>
+			<p>Álvaro (no date) Simple Centred Hamburger Menu [<a href="https://codepen.io/alvarotrigo/pen/wvrzPWL">https://codepen.io/alvarotrigo/pen/wvrzPWL</a>] (Accessed: 12 November 2024)</p>
+		</article>
+		
+		<p><a id="to-top" href="#top">Back to top</a></p> <!--sends the user to the top of the webpage when click. the href="#top" already recognised-->
+		
+		<footer> <!--html element for the bottom of the webpage-->
+			<ul>
+				<li><a href="accessibility.html">Accessibility</a></li>
+				<li><a href="legal-security.html">Legal & security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+				<li><a href="contact-us.html">Contact</a></li>
+			</ul>
+		</footer>
+		
+		
+	</body>
+	</html>

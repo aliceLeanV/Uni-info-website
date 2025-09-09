@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en"> <!--declares the language of the webpage-->
+    
+    <head>
+      <meta charset="utf-8">
+      <title>Home - University of Sheffield</title> <!--gives the browser a title, so unique-->
+      <meta name="author" content="Alice Lean">
+	  <link rel="stylesheet" href="index.css"> <!--links the html file to the corresponding css file-->
+    </head>
+    
+    <body>
+		<nav> <!--html element, to create a navigation menu-->
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox"> <!--creates a clickable checkbox for hamburger menu-->
+					<div class="hamburger-lines">
+						<span class="line 1"></span> <!--creates the 3 lines for hamburger menu-->
+						<span class="line 2"></span>
+						<span class="line 3"></span>
+					</div>  
+					<div id="menu">
+						<li><a href="index.html">Home</a></li> <!--links the webpage menu text to the corresponding html file-->
+						<li><a href="food-drink.html">Food and Drink Vendors</a></li>
+						<li><a href="picnic-location.html">Picnic Locations</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+					</div>
+				</div>
+			</div>
+		</nav> <!--Reference: Álvaro (no date) Simple Centred Hamburger Menu [https://codepen.io/alvarotrigo/pen/wvrzPWL] (Accessed: 12 November 2024)-->
+		
+		<header>University of Sheffield</header> <!--html element, the main title of the webpage-->
+		
+		<h1>Home</h1> <!--html element, heading of the webpage-->
+		
+		<section> <!--html element to section a webpage-->
+			<p> Welcome to the University of Sheffield! </p>
+			<figure>
+				<img src="campus.jpg" alt="The Firth Court" width="600"> <!--src inputs the named jpg into the webpage. alt gives the image a text description. width controls the size of the image-->
+					<figcaption>The Firth Court (University of Sheffield, 2022)</figcaption> <!--the caption appears below the image-->
+			</figure>
+			<p>Here, we will introduce you to a range of amazing locations on campus and places where you can purchase and enjoy a lunch or even a small snack. The campus is filled with locations with amazingly unique architecture and lush green parks where it is guaranteed to make your eating experience exciting. </p>
+			<p>As a first-year student, being on campus has been extreamly eventful and there has always been new things to discover everyday, whether that be food or locations. Even after a month, I am still uncovering new things and can't wait to see what else coems to light as the year goes on.</p>
+			<p>A visit to the University of Sheffield will definately be a lively adventure!</p>
+			<p></p>
+		</section>
+		
+		<article> <!--element to show independent content-->
+			<h3> References:</h3>
+			<p>University of Sheffield (2022) University of Sheffield ranked within top 100 universities in 2023 QS World University Rankings [<a href="https://www.sheffield.ac.uk/news/university-sheffield-ranked-within-top-100-universities-2023-qs-world-university-rankings">https://www.sheffield.ac.uk/news/university-sheffield-ranked-within-top-100-universities-2023-qs-world-university-rankings</a>] (Accessed: 2 November 2024)</p>
+			<!--link to take user elsewhere determined with href= and shows up in the page with the text written-->
+			<p>Álvaro (no date) Simple Centred Hamburger Menu [<a href="https://codepen.io/alvarotrigo/pen/wvrzPWL">https://codepen.io/alvarotrigo/pen/wvrzPWL</a>] (Accessed: 12 November 2024)</p>
+		</article>
+		
+		<p><a id="to-top" href="#top">Back to top</a></p> <!--sends the user to the top of the webpage when click. the href="#top" already recognised-->
+		<!--Use id as 'to-top' only appears once in the page-->
+		
+		<footer> <!--html element for the bottom of the webpage-->
+			<ul> <!-- unordered list makes it easier to structure the footer -->
+				<li><a href="accessibility.html">Accessibility</a></li> <!--screen readers can identify it as a list, because of use of <li> -->
+				<li><a href="legal-security.html">Legal & security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+				<li><a href="contact-us.html">Contact</a></li>
+			</ul>
+		</footer>
+		
+		
+	</body>
+	</html>

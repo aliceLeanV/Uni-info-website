@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en"> <!--declares the language of the webpage-->
+    
+    <head>
+      <meta charset="utf-8">
+      <title>Accessibility - University of Sheffield</title> <!--gives the browser a title-->
+      <meta name="author" content="Alice Lean">
+	  <link rel="stylesheet" href="accessibility.css"> <!--links the html file to the corresponding css file-->
+    </head>
+    
+    <body>
+		<nav> <!--html element, to create a navigation menu-->
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox">
+					<div class="hamburger-lines">
+						<span class="line 1"></span> <!--creates the 3 lines-->
+						<span class="line 2"></span>
+						<span class="line 3"></span>
+					</div>  
+					<div id="menu">
+						<li><a href="index.html">Home</a></li> <!--links the webpage menu text to the corresponding html file-->
+						<li><a href="food-drink.html">Food and Drink Vendors</a></li>
+						<li><a href="picnic-location.html">Picnic Locations</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+					</div>
+				</div>
+			</div>
+		</nav> <!--Reference: Álvaro (no date) Simple Centred Hamburger Menu [https://codepen.io/alvarotrigo/pen/wvrzPWL] (Accessed: 12 November 2024)-->
+		
+		<header>University of Sheffield</header> <!--html element, the main title of the webpage-->
+		
+		<h1>Accessibility</h1> <!--html element, heading of the webpage-->
+		
+		<section> <!--html element to section a webpage-->
+			<h2>Font colours and size</h2> <!--a second heading for subheading the section-->
+			<p>The webiste being distinguishable is important to make it eaier for users to see content including separating foreground from background (w3c, 1.4). The website makes use of colours contrasts, such as the white textbox on a darker colour, to improve the readability for users with any visual impairments. The font size is no smaller than 15px and are in a consistent, readable font throughout. </p>
+			<p>The quiz on the website uses multiple cues, colour and text, to indicate the answers. This is to ensure users who may be colour blind or be using any colour-blindness filter. </p>
+			<p>The website makes use of clear navigation, at the top of the page through the use of a hamburger menu and bottom of the page, to ensure proper structure and therefore, the user can navigate across the page easily with the appropriate labels. Additionally, when the user hovers over a link, the font becomes bold so the user is aware which link they are clicking.</p>
+			<h2>Accessibility handled by other softwares</h2>
+			<p>If a user uses a zoom tool on the website, whether to see the text or images clearer, the website will maintain its structure to ensure a clear layout. </p>
+			<p>If a user has a visual impairment and wishes to use another software such as a screen reader when using the website, the images on the website makes use of alternate text, so users who are unable to view the images can receive a description of it.</p>
+		</section>
+		
+		<article> <!--element to show independent content-->
+			<h3>References:</h3>
+			<p>w3c (no date) How to Meet WCAG (Quick Reference)[<a href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#distinguishable">https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#distinguishable</a>] (Accessed: 14 November 2024)</p>
+			<p>Álvaro (no date) Simple Centred Hamburger Menu [<a href="https://codepen.io/alvarotrigo/pen/wvrzPWL">https://codepen.io/alvarotrigo/pen/wvrzPWL</a>] (Accessed: 12 November 2024)</p>
+		</article>
+		
+		<p><a id="to-top" href="#top">Back to top</a></p> <!--sends the user to the top of the webpage when click. the href="#top" already recognised-->
+		
+		<footer> <!--html element for the bottom of the webpage-->
+			<ul>
+				<li><a href="accessibility.html">Accessibility</a></li>
+				<li><a href="legal-security.html">Legal & security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+				<li><a href="contact-us.html">Contact</a></li>
+			</ul>
+		</footer>
+		
+		
+	</body>
+	</html>

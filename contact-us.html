@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en"> <!--declares the language of the webpage-->
+    
+    <head>
+      <meta charset="utf-8">
+      <title>Contact Us - University of Sheffield</title> <!--gives the browser a title-->
+      <meta name="author" content="Alice Lean">
+	  <link rel="stylesheet" href="contact-us.css"> <!--links the html file to the corresponding css file-->
+    </head>
+    
+    <body>
+		<nav> <!--html element, to create a navigation menu-->
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox">
+					<div class="hamburger-lines">
+						<span class="line 1"></span> <!--creates the 3 lines-->
+						<span class="line 2"></span>
+						<span class="line 3"></span>
+					</div>  
+					<div id="menu">
+						<li><a href="index.html">Home</a></li> <!--links the webpage menu text to the corresponding html file-->
+						<li><a href="food-drink.html">Food and Drink Vendors</a></li>
+						<li><a href="picnic-location.html">Picnic Locations</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+					</div>
+				</div>
+			</div>
+		</nav> <!--Reference: Álvaro (no date) Simple Centred Hamburger Menu [https://codepen.io/alvarotrigo/pen/wvrzPWL] (Accessed: 12 November 2024)-->
+		
+		<header>University of Sheffield</header> <!--html element, the main title of the webpage-->
+		
+		<h1>Contact Us</h1> <!--html element, heading of the webpage-->
+		
+		<section> <!--html element to section a webpage-->
+			<p> Feel free to contact us if you have any questions! </p>
+		</section>
+		
+		<section id="section1"> 
+			<h2>Our contact details:</h2> <!--a second heading for subheading the section-->
+			<p>dcs@sheffield.ac.uk</p>
+		</section>
+		
+		<div>	
+			<form action="malito:alean1@sheffield.ac.uk?subject=University%20Of%20Sheffield%20-%20Contact%20us%20email" method="post">
+			<!--sends to email after malito: , shown by method="post...cannot use space as an illegal character, so use %20 to represent space-->
+				<h2>Contact us!</h2>
+				<p>
+					<label for="email">Email: </label> <!--labels the input-->
+					<input type="email" id="email" name="your-email"> <!--type email recognises and allows user to enter email-->
+				</p>
+				<p>
+					<label for="comment">Comments: </label>
+					<textarea id="comment" name="your-comments"></textarea> <!--textarea allows use to enter into a flexible textbox-->
+				</p>
+				<p>
+					<input type="submit" id="button" name="submit-button" value="Submit"> <!--creates button of type="submit", when click, users inputs in the textbox is submitted-->
+					<input type="reset" id="button" name="reset-button" value="Reset"> <!--creates button of type="reset", when click, users inputs are deleted-->
+				</p>
+				<p id="disc">Entered email will not be shared to any third-parties without your consent.</p>
+			</form>
+		</div>
+		
+		<article> <!--element to show independent content-->
+			<h3>References:</h3>
+			<p>Álvaro (no date) Simple Centred Hamburger Menu [<a href="https://codepen.io/alvarotrigo/pen/wvrzPWL">https://codepen.io/alvarotrigo/pen/wvrzPWL</a>] (Accessed: 12 November 2024)</p>
+		</article>
+		
+		<p><a id="to-top" href="#top">Back to top</a></p> <!--sends the user to the top of the webpage when click. the href="#top" already recognised-->
+		
+		<footer> <!--html element for the bottom of the webpage-->
+			<ul>
+				<li><a href="accessibility.html">Accessibility</a></li>
+				<li><a href="legal-security.html">Legal & security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+				<li><a href="contact-us.html">Contact</a></li>
+			</ul>
+		</footer>
+		
+		
+	</body>
+	</html>

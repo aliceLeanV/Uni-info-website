@@ -1,0 +1,268 @@
+/* File: contact-us.css
+   Author: Alice Lean
+*/
+
+html {
+	background-color: rgb(90, 124, 168); /*colours the whole background of the website*/
+	height: 100%;
+}
+
+body {
+	min-height: 100%; /*height of elements takes up 100% at minimum of the webpage despite there not being enough content to fill the space*/
+	display: flex; /*flexible layout*/
+	flex-direction: column; /*assembles elements so they display below eachother*/
+}
+
+header {
+	font-size: 32px;
+	font-weight: bold;
+	background-color: #2C3E5F;
+	color: white;
+	border-radius: 10px; /*rounds the corner of the border*/
+	width: 100%;
+	text-align: center; /*centers the text in the middle of the page*/
+	margin: 0 auto; /*will fill the given width*/
+	padding: 0.5em 3%; /*0.5em is vertical padding and 3% is horizontal padding*/
+}
+
+h1 {
+	font-size: 25px;
+	background-color: #E5E5E5;
+	border-radius: 10px;
+	width: 70%;
+	margin: 20px;
+	padding-left: 20px;
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+	
+a:hover {
+	font-weight: bold;
+}
+
+/*HAMBURGER MENU START*/
+.container {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 30%; /*keeps the nav bar to the left side*/
+  position: absolute; /*makes the menu appear above everything else instead of taking its own space on the page*/
+}
+
+.navbar .nav-container li {
+  list-style: none;  /*Removes bulletpoint from the the list*/
+}
+
+.navbar .nav-container a {
+	color: #E5E5E5; /*colours the menu text*/
+	font-size: 22px;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bold; /*when hover menu, becomes bold*/
+}
+
+.nav-container {
+  display: block;  /*takes up full width available*/ 
+  position: relative;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 10px; 
+  left: 20px; /*positions the checkbox*/
+  z-index: 5; /*ensures the checkbox appears ontop of elements with a lower z-index when overlapped*/
+  opacity: 0; /*makes the checkbox box invisible but still clickable*/
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  z-index: 2; /*lines appears below the checkbox*/
+  display: flex;
+  flex-direction: column;  /*The hamburger lines show below eachother*/
+  justify-content: space-between; /*Spaces the lines so not touching*/
+}
+
+.nav-container .hamburger-lines .line { 
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px; /*appearance of the 3 lines*/
+  background: #E5E5E5; /*colour of the 3 lines*/
+}
+
+.navbar #menu {
+  padding-top: 120px; /*number of pixel from the top of the navbar*/
+  padding-bottom: 120px; /*number of pixel from the bottom of the navbar*/
+  height: 100%; /*navbar takes up full height of the website*/
+  width: 100%;
+  transform: translate(-150%); /*Moves the navbar outside of the screen so cannot be seen unless box checked*/
+  display: flex;
+  flex-direction: column; /*the menu items appear in a column*/
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out; /*gives the navbar animation when appearing*/
+  text-align: center;
+  background-color: #1A273E; /*gives the navbar colour*/
+  opacity: 95%; /*makes the navbar slightly opaque*/
+}
+
+.navbar #menu li {
+  margin-bottom: 1.2rem; /*separates the menus so they are spaced out*/
+}
+
+.nav-container input[type="checkbox"]:checked ~ #menu {
+  transform: translateX(0); /*The navbar is shown when box checked*/
+}
+/*HAMBURGER MENU END --- Reference: Álvaro (no date) Simple Centred Hamburger Menu [https://codepen.io/alvarotrigo/pen/wvrzPWL] (Accessed: 12 November 2024)*/
+
+section{
+	font-size: 18px;
+	background-color: #E5E5E5;
+	border-radius: 10px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 3px 0;
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+	
+section p {
+    margin-left: 20px; /*20px between element and start of text*/    
+}
+
+h2 {
+	font-size: 19px;
+	text-align: center;	
+}
+
+#section1{
+	font-size: 18px;
+	background-color: #E5E5E5;
+	border-radius: 10px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 3px 0;
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+	
+#section1 p {
+    margin-left: 20px; /*20px between element and start of text*/    
+	text-align: center;	
+}
+
+
+div {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+form {
+	margin: 0 auto;
+	width: 50%;
+	display: inline-block; /*keeps it inline with other elements*/
+	background-color: #E5E5E5;
+	padding: 10px;
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+
+label {
+	display: inline-block;
+	min-width: 90px;
+	text-align: right; /*align the text to the right side of the element*/
+}
+
+text, email, comment {
+	display: inline-block;
+	min-width: 90px;
+	text-align: right;
+}
+
+input:focus, textarea:focus { /*when user selects the button, gains its focus*/
+	width: 250px; /*when click on button or text area, increases to 250px*/
+	box-sizing: border-box; /*ensures this only applies to the border of the box*/
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+
+textarea {
+	vertical-align: top; /*aligns elements vertically to its highest element */
+	height: 5em;
+}
+
+#disc {
+	font-size: 16px;
+	text-align:center;
+}
+
+article {
+	font-size: 18px;
+	background-color: #E5E5E5;
+	border-radius: 6px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 3px 0;
+	border-style: solid;
+	border-color: #2C3E5F;
+}
+	
+#to-top{
+	background-color: #CFCFCF;
+	padding: 2px;
+	font-size: 22px;
+}
+	
+footer{
+	width: 100%; /*takes the full length of the page*/
+	padding: 0.5em 3%;
+	background-color: #CFCFCF;
+	text-align: center;
+	margin-top: auto;
+	font-size: 22px;
+}
+
+footer li{
+	list-style: none;  /*Removes bulletpoint from the the list*/
+	display: inline; /*structures the links beside eachother*/
+	margin: 1.5%; /*Spaces the lines so not touching*/
+}
+
+@media screen and (min-width: 501px) { /*makes it mobile-first responsive*/
+	main img {
+		width: 30%;  /*only applied for screens larger than or 501px*/
+	}
+}
+
+@media screen and (max-width: 500px) { /*makes it mobile-first responsive*/
+	section {
+		width: 80%;  /*only applied for screens smaller than or 500px*/
+	}
+	
+	#section1 {
+		width: 80%;  /*only applied for screens smaller than or 500px*/
+	}
+	
+	form {
+		width: 80%;  /*only applied for screens smaller than or 500px*/
+	}
+	
+	article {
+		width: 80%;  /*only applied for screens smaller than or 500px*/
+	}
+}
+	
